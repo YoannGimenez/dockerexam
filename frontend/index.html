@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Liste des livres</h1>
+    <label for="genre-filter">Filtrer par genre :</label>
+    <select id="genre-filter">
+        <option value="">Chargement...</option>
+    </select>
+
+    <ul id="book-list"></ul>
+
+    <h3>Ajouter un livre</h3>
+    <form id="book-form">
+        <label for="book-name">Nom du livre :</label>
+        <input type="text" id="book-name" required>
+
+        <label for="book-genre">Genre :</label>
+        <select id="book-genre" required>
+            <option value="">Chargement...</option>
+        </select>
+
+        <button type="submit">Ajouter</button>
+    </form>
+<script src="script.js"></script>
+</body>
+</html>
